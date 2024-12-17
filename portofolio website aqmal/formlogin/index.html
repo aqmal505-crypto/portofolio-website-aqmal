@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGIN FORM AQMAL</title>
+  <style>
+    /* Reset & Basic Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(135deg, white, brown);
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 400px;
+      padding: 20px;
+    }
+
+    /* Form Styles */
+    .login-form {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .login-form h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    /* Input Group */
+    .input-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .input-group label {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-top: 5px;
+      transition: border-color 0.3s;
+    }
+
+    .input-group input:focus {
+      border-color: #6a11cb;
+      outline: none;
+    }
+
+    /* Login Button */
+    .btn-login {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      color: #fff;
+      background-color: burlywood;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn-login:hover {
+      background-color: brown;
+    }
+
+    /* Sign-up Text */
+    .signup-text {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .signup-text a {
+      color: black;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .signup-text a:hover {
+      color: brown;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="login-form">
+      <h2>Login Account</h2>
+      <form action="#" method="post">
+        <div class="input-group">
+          <label for="username">Email or Username</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn-login"> <a href="dashboard.html">Login</a></button>
+    </form>
+      <p class="signup-text">Don't have an account yet? <a href="register.html">Register now</a></p>
+    </div>
+  </div>
+</body>
+</html>

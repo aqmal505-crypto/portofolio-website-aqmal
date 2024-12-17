@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Now</title>
+  <style>
+    /* Reset & Basic Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(135deg, white, brown);
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 450px;
+      padding: 20px;
+    }
+
+    /* Form Styles */
+    .register-form {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .register-form h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    /* Input Group */
+    .input-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .input-group label {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-top: 5px;
+      transition: border-color 0.3s;
+    }
+
+    .input-group input:focus {
+      border-color: #ff7e5f;
+      outline: none;
+    }
+
+    /* Register Button */
+    .btn-register {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      color: #fff;
+      background-color: burlywood;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn-register:hover {
+      background-color: brown;
+    }
+
+    /* Login Text */
+    .login-text {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .login-text a {
+      color: black;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .login-text a:hover {
+      color: #feb47b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="register-form">
+      <h2>Register Now</h2>
+      <form action="#" method="post">
+        <div class="input-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn-register">Register</button>
+      </form>
+      <p class="login-text">Already have an account? <a href="index.html">Login Now</a></p>
+    </div>
+  </div>
+</body>
+</html>

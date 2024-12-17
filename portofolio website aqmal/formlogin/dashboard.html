@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <style>
+    /* Reset & Basic Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, white, brown);
+    }
+
+    /* Container */
+    .dashboard-container {
+      width: 100%;
+      max-width: 900px;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    /* Card Layout */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    /* Card Styling */
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-icon {
+      font-size: 40px;
+      color: #36d1dc;
+      margin-bottom: 10px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .card-description {
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* Logout Button */
+    .btn-logout {
+      display: block;
+      margin: 30px auto;
+      padding: 10px 20px;
+      background-color: burlywood;
+      color: brown;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .btn-logout:hover {
+      background-color: #ff6b6b;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard-container">
+    <h1>Welcome, Haiqal Aqmal Suryanto!</h1>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <div class="card-title">Dashboard</div>
+        <div class="card-description">Lihat ringkasan dan analisis data.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">📝</div>
+        <div class="card-title">Reports</div>
+        <div class="card-description">Buat dan kelola laporan harian.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">📧</div>
+        <div class="card-title">Messages</div>
+        <div class="card-description">Periksa pesan terbaru Anda.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚙️</div>
+        <div class="card-title">Settings</div>
+        <div class="card-description">Pengaturan akun dan preferensi.</div>
+      </div>
+    </div>
+    <a href="index.html" class="btn-logout">Logout</a>  
+  </div>
+</body>
+</html>

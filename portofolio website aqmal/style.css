@@ -1,0 +1,167 @@
+/* Variable untuk warna utama */
+:root {
+    --primary-color: #009688;
+    --text-color: #333;
+    --bg-color: #f8f9fa;
+    --accent-color: #00796b;
+    --btn-color: #009688;
+    --btn-text-color: #fff;
+    --footer-bg-color: #333;
+    --footer-text-color: #fff;
+  }
+  
+  /* Reset dasar */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: url('gunung.jpg') center/cover no-repeat;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn {
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: var(--accent-color);
+  }
+  
+  /* About Section */
+  .about-section {
+    background-color: var(--bg-color);
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .about-section h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  /* Portfolio Section */
+  .portfolio-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: var(--bg-color);
+  }
+  
+  .portfolio-section h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .portfolio-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .project {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project h3 {
+    padding: 10px;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+  }
+  
+  .project p {
+    padding: 0 10px 20px;
+    color: var(--text-color);
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    padding: 50px 20px;
+    background-color: var(--bg-color);
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .contact-form {
+    display: flex;                                                                                                                  
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    padding: 10px;
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: var(--accent-color);
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 20px;
+  }
+  
